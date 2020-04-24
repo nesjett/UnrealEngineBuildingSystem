@@ -1,0 +1,99 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>Interact</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+      <a class="navbar_style" href="../../index.html">BuildingSystem v3 Docs</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style" href="../SKEL_BPI_Interactable_C.html">BPI Interactable</a>
+      <a class="navbar_style">&gt;</a>
+      <a class="navbar_style">Interact</a>
+      <h1 class="title_style">Interact</h1>
+      <p>Interacts with the object. If no interaction or not available to interact for some reason, returns false, otherwise, executes the interaction and returns true. Return value can be used to chain multiple interactions within the same input key, allowing us to control the chain slave at which each one must be executed. See CampFire blueprint for examples</p>
+      <img src="../img/nd_img_Interact.png" />
+      <h3 class="title_style">Inputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">In</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Target</div>
+              <div class="param_type">BPI Interactable Interface</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Instigator Actor</div>
+              <div class="param_type">Actor Object Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Key</div>
+              <div class="param_type">Key Structure</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="title_style">Outputs</h3>
+      <table>
+        <colgroup>
+          <col width="25%" />
+          <col width="75%" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <div class="param_name title_style">Out</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Interaction Consumed</div>
+              <div class="param_type">Boolean</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Message</div>
+              <div class="param_type">Name</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
