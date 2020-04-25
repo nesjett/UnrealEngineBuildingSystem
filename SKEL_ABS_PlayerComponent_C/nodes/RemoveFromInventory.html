@@ -1,18 +1,18 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
   <head>
-    <title>Look for Interactable Objects</title>
+    <title>Remove from Inventory</title>
     <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
   </head>
   <body>
     <div id="content_container">
-      <a class="navbar_style" href="../../index.html">BuildingSystem v3 Docs</a>
+      <a class="navbar_style" href="../../index.html">Advanced Building System v3 Docs</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style" href="../SKEL_ABS_Character_C.html">ABS Character</a>
+      <a class="navbar_style" href="../SKEL_ABS_PlayerComponent_C.html">ABS Player Component</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style">Look for Interactable Objects</a>
-      <h1 class="title_style">Look for Interactable Objects</h1>
-      <p>Look for Interactable Objects</p>
-      <img src="../img/nd_img_LookForInteractableObjects.png" />
+      <a class="navbar_style">Remove from Inventory</a>
+      <h1 class="title_style">Remove from Inventory</h1>
+      <p>Remove from Inventory</p>
+      <img src="../img/nd_img_RemoveFromInventory.png" />
       <h3 class="title_style">Inputs</h3>
       <table>
         <colgroup>
@@ -32,7 +32,16 @@
           <tr>
             <td>
               <div class="param_name title_style">Target</div>
-              <div class="param_type">ABS Character Object Reference</div>
+              <div class="param_type">ABS Player Component Object Reference</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Resource</div>
+              <div class="param_type">Resources Base Object Reference</div>
             </td>
             <td>
               <p />
@@ -51,6 +60,15 @@
             <td>
               <div class="param_name title_style">Out</div>
               <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Removed</div>
+              <div class="param_type">Boolean</div>
             </td>
             <td>
               <p />
