@@ -1,0 +1,170 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <title>BuildingSystem v3 Docs</title>
+    <link rel="stylesheet" type="text/css" href="./css/bpdoc.css" />
+  </head>
+  <body>
+    <div id="content_container">
+		<div>
+			<img src="https://nsabater.com/wp-content/uploads/2016/11/favicon_portfolio.png" style="float:left;" />
+			<h1 style="margin-bottom: 5px;padding-top: 19px;">Nestor's Building system</h1>
+		</div>
+		
+	  <table>
+        <tbody>
+          <tr>
+            <td>
+              <a target="page_content" href="./index_content.html">Home</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+	  
+      <h2 class="title_style">Components</h2>
+	  
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_ABS_MeshComponent_C/SKEL_ABS_MeshComponent_C.html">ABS Mesh Component</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+	  
+	  <h2 class="title_style">Buildings</h2>
+	  <table>
+		<tbody>
+			<tr>
+            <td>
+              <a target="page_content" href="./SKEL_InteractableBase_C/SKEL_InteractableBase_C.html">Interactable Base</a>
+            </td>
+          </tr>
+			<tr>
+            <td>
+              <a target="page_content" href="./SKEL_DestroyerExample_C/SKEL_DestroyerExample_C.html">Destroyer Example</a>
+            </td>
+          </tr>
+		  <tr>
+            <td>
+              <a target="page_content" href="./SKEL_CampFire_C/SKEL_CampFire_C.html">Camp Fire</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_CarriableBase_C/SKEL_CarriableBase_C.html">Carriable Base</a>
+            </td>
+          </tr>
+		  <tr>
+            <td>
+              <a target="page_content" href="./SKEL_Bridge_C/SKEL_Bridge_C.html">Bridge</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_BuildingBase_C/SKEL_BuildingBase_C.html">Building Base</a>
+            </td>
+          </tr>
+			<tr>
+				<td>
+				  <a target="page_content" href="./SKEL_WoodWall_C/SKEL_WoodWall_C.html">Wood Wall (Example building)</a>
+				</td>
+			</tr>
+	  
+		</tbody>
+	  </table>
+	  
+	  
+	  <h2 class="title_style">Interfaces</h2>
+	  <table>
+		<tbody>
+			<tr>
+            <td>
+              <a target="page_content" href="./SKEL_BPI_Buildable_C/SKEL_BPI_Buildable_C.html">BPI Buildable</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_BPI_BuildingMesh_C/SKEL_BPI_BuildingMesh_C.html">BPI Building Mesh</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_BPI_HUD_C/SKEL_BPI_HUD_C.html">BPI HUD</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_BPI_Interactable_C/SKEL_BPI_Interactable_C.html">BPI Interactable</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_BPI_Inventory_C/SKEL_BPI_Inventory_C.html">BPI Inventory</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_BPI_InventoryItem_C/SKEL_BPI_InventoryItem_C.html">BPI Inventory Item</a>
+            </td>
+          </tr>
+		</tbody>
+	  </table>
+	  
+	  
+	  <h2 class="title_style">Player classes</h2>	  
+	  <table>
+		<tbody>
+			<tr>
+            <td>
+              <a target="page_content" href="./ABS_Character_C/ABS_Character_C.html">ABS Character</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a target="page_content" href="./SKEL_ABS_Character_C/SKEL_ABS_Character_C.html">ABS Character</a>
+            </td>
+          </tr>
+		  
+		  <tr>
+            <td>
+              <a target="page_content" href="./SKEL_ABS_HUD_C/SKEL_ABS_HUD_C.html">ABS HUD</a>
+            </td>
+          </tr>
+		  
+		  <tr>
+            <td>
+              <a target="page_content" href="./SKEL_HUD_Widget_C/SKEL_HUD_Widget_C.html">HUD Widget</a>
+            </td>
+          </tr>
+	  
+		</tbody>
+	  </table>
+	  
+	  <div style="margin:40px auto;">
+		<a href="https://nsabater.com">Nestor's portfolio</a> <a href="mailto:contact@nsabater.com">Contact: contact@nsabater.com</a>
+	  </div>
+	  
+    </div>
+	
+	<script>
+		var Anchors = document.getElementsByTagName("a");
+		var Selected = null;
+		
+		function SetSelected(event) {
+			if(Selected != null){
+				Selected.classList.remove('selected');
+			}
+			event.target.classList.add('selected');
+			Selected = event.target;
+		}
+
+		// add listener to all links
+		for (var i = 0; i < Anchors.length ; i++) {
+			Anchors[i].addEventListener("click", 
+				SetSelected, 
+				false);
+		}
+	</script>
+  </body>
+</html>
